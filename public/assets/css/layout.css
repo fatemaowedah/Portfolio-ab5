@@ -14,10 +14,13 @@ input, textarea, select {
     h2 {
     font-size: 2em;
     letter-spacing: -1px;
+    font-family: 'Roboto', sans-serif;
+    
     }
     
     h2.alt {
-    color: #888;
+    color: rgb(112, 3, 79);
+    font-family: 'Roboto', sans-serif;
     }
     
     h3 {
@@ -534,6 +537,8 @@ input, textarea, select {
     
         #main {
             margin-left: 300px;
+    font-family: 'Roboto', sans-serif;
+    
         }
     }
     @media screen and (min-width: 961px) and (max-width: 1320px) {
@@ -559,7 +564,28 @@ input, textarea, select {
     #headerToggle {
         display: none;
     }
-    @media screen and (max-width: 960px) {
+    @media screen and (min-width: 736px) and (max-width: 960px){
+        .item {
+            margin-bottom: 20px;
+        }
+    
+    /* Header */
+    
+        #header {
+            width: 35%;
+        }
+        #footer {
+            margin-left: 20%;
+        }
+    
+    /* Main */
+    
+        #main {
+            margin-left: 35%;
+        }
+    
+    }
+    @media screen and (max-width: 736px) {
         #header {
             -moz-backface-visibility: hidden;
             -webkit-backface-visibility: hidden;
@@ -625,3 +651,11 @@ input, textarea, select {
             margin-left: 0;
         }
     }
+    #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 80%;
+        min-height: 100%;
+        z-index: -1;
+      }
