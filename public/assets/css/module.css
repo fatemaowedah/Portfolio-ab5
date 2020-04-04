@@ -2,6 +2,15 @@
     @import url("modules/media.css");
     @import url("./modules/form.css");
     @import url("./modules/button.css");
+   
+body {
+    background: #fff;
+    color: #888;
+    }
+    *, *:before, *:after {
+    box-sizing: inherit;
+    }
+    
     body.is-preload *, body.is-preload *:before, body.is-preload *:after {
     -moz-animation: none !important;
     -webkit-animation: none !important;
@@ -508,10 +517,7 @@
     background-position: center center;
     }
     
-    #main > section.one {
-    background-color: #81918E;
-    background-image: url("../../images/banner.jpg");
-    }
+    
     
     #main > section.two {
     background-color: #f5fafa;
@@ -562,7 +568,32 @@
                     line-height: 2.25em;
                 }
     }
-    @media screen and (max-width: 960px) {
+    @media screen and (min-width:736px) and (max-width:960){
+        ul.icons li a {
+            width: 1.75em;
+        }
+        #logo .image {
+            position: relative;
+            margin: 0 0 0.5em 0;
+        }
+    
+        #nav ul li a {
+            font-size: 0.8em;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+        }
+    
+            #nav ul li a span {
+                padding-right: 2.25em;
+            }
+    
+                #nav ul li a span:before {
+                    left: 100%;
+                    margin-left: -1.25em;
+                    line-height: 2.25em;
+                }
+    }
+    @media screen and (max-width: 736px) {
         .item {
             margin-bottom: 15px;
         }
